@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katipage</title>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <header>
+      <div id="logo" onclick="slowScroll('#top')">
+        <span>Kati</span>
+      </div>
+      <div id="about">
+        <a href="#" onclick="slowScroll('#info')" title="Инфомация обо мне" >Обо мне</a>
+        <a href="#" onclick="slowScroll('#study')" title="Учеба" >Учеба</a>
+        <a href="#" onclick="slowScroll('#hobby')" title="Хобби" >Хобби</a>
+
+      </div>
+    </header>
+
+    <div id="top">
+      <h3>Екатерина Эйвазова</h3>
+      <h5>Студентка УлГУ</h5>
+    </div>
+
+    <div id="info">
+      <h2>Инфомация обо мне</h2>
+      <div class ="img">
+        <img src="https://sun9-north.userapi.com/sun9-85/s/v1/ig2/Z8cj4DZb-UPn9gRA7DeEWfiVw9G179tlwelAEqrND5nsgMUhqD9pRthBchUny5vDgQDPfAeUc1M2TbaiQIe--oye.jpg?size=811x1080&quality=95&type=album" alt="">
+        <span>Я родилась 17.09.2002 в г.Ульяновск. </span>
+      </div>
+
+    </div>
+
+    <div id="study">
+      <div class="intro">
+        <h2>Учебное заведение</h2>
+        <span>УлГУ</span>
+      </div>
+      <div class= "text">
+        <span>Сейчас я учусь в Ульяновском Гoсударственном Университете на 3 курсе по направлению Математическое обеспечение и
+          администрирование информационных систем Факультета Математики
+          Информационных и Авиационных Технологий.</span>
+        </div>
+      </div>
+
+      <div id="hobby">
+        <h2>Мои хобби</h2>
+        <div class="">
+
+        </div>
+
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script>
+      function slowScroll(id) {
+        $('body').animate({
+          Scrolltop: $(id).offset().top
+        },500)
+      }
+
+      $(document).on("scroll".function () {
+        if($(window).scrollTop()=== 0)
+          $("header").removeClass("fixed");
+        else
+          $("header").attr("class","fixed");
+      });
+    </script>
+
+  </body>
+</html>
