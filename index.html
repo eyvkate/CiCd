@@ -13,7 +13,7 @@
         <span>Kati</span>
       </div>
       <div id="about">
-        <a href="#" onclick="slowScroll('#info')" title="Инфомация обо мне" >Обо мне</a>
+        <a href="#" onclick="slowScroll('#info')" title="Инфомация  мне" >Обо мне</a>
         <a href="#" onclick="slowScroll('#study')" title="Учеба" >Учеба</a>
         <a href="#" onclick="slowScroll('#hobby')" title="Хобби" >Хобби</a>
 
@@ -62,12 +62,7 @@
         },500)
       }
 
-      $(document).on("scroll".function () {
-        if($(window).scrollTop()=== 0)
-          $("header").removeClass("fixed");
-        else
-          $("header").attr("class","fixed");
-      });
+     
     </script>
 
   </body>
